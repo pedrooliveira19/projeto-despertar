@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+@font-face {
+    font-family: 'Enchanted Land';
+    src: url('../fontes/Enchanted Land.otf');
+}
+
+:root {
+    --cor0: #7ea16b;
+    --cor1: #658653;
+    --cor2: #3c5233;
+    --cor3: #264027;
+    --cor4: #152516;
+    --cor5: #4C191B;
+    --cor6: #220C10;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Enchanted Land', 'Times New Roman', Times, serif;
+    --fonte-destaque2: 'MedievalSharp';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor4);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px, 2px, 0px, rgba(0, 0, 0, 0.267);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-destaque2);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px, 2px, 0px, rgba(0, 0, 0, 0.315);
+    margin-bottom: 30px;
+}
+
+nav {
+    background-color: var(--cor3);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    padding: 10px;
+    text-align: center;
+}
+
+nav > a {
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+nav > a:hover {
+    background-color: var(--cor0);
+    color: var(--cor3);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*Nessa class, usamos para centralizar as cartas de navegação*/
+.centro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.centro a {
+    color: var(--cor3);
+}
+
+/*Aqui temos a configuraçõa das cartas da página index (.carta)*/
+.carta {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: var(--cor1);
+    margin-top: 40px;
+    transition: transform 0.4s ease;
+    padding-top: 30px;
+}
+
+.carta:hover {
+    display: inline-block;
+    transform: scale(1.1);
+    background-color: var(--cor0);
+    color: var(--cor3);
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 30px;
+}
+
+.carta > h2 {
+    text-align: center;
+    font-family: var(--fonte-destaque2);
+    font-size: 2em;
+}
+
+/*Aqui temos a configuração das cartas da página das vilas (.vilas)*/
+.vilas {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: var(--cor1);
+    margin-top: 90px;
+    transition: transform 0.4s ease;
+    padding-top: 30px;
+}
+
+.vilas:hover {
+    display: inline-block;
+    transform: scale(1.1);
+    background-color: var(--cor0);
+    color: var(--cor3);
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 30px;
+}
+
+.vilas > h2 {
+    text-align: center;
+    font-family: var(--fonte-destaque2);
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: var(--cor4);
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 25px;
+}
+
+/*Aqui configuramos o footer da página das vilas (#vila)*/
+#vila {
+    padding-top: 75px;
+}
