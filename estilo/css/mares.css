@@ -131,7 +131,7 @@ main p {
 }
 
 footer {
-    background-color: var(--cor5);
+    background-color: var(--cor3);
     font-family: var(--fonte-padrao);
     color: white;
     text-align: center;
@@ -150,6 +150,7 @@ footer {
     height: 160px;
     border-radius: 10px;
     margin-top: 30px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.393);
 }
 
 #indice h3 {
