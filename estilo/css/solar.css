@@ -169,3 +169,8 @@ footer {
     color: var(--cor5);
     text-decoration: underline;
 }
+
+div#tamanho {
+    width: 250px;
+    height: 300px;
+}
