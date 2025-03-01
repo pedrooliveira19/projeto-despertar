@@ -10,17 +10,13 @@
 }
 
 :root {
-    --cor00: white;
-    
-    --corY1: #f8dc8d;
-    --corY2: #F4D06F;
-    --corY3: #F29F05;
-
-    --corR1: #f17468;
-    --corR2: #F2594B;
-    --corR3: #D92818;
-    --corR4: #902218;
-    --corR5: #62150e;
+    --corW1: #ededed;
+    --corW2: #c8c8c8;
+    --corP1: #b86eda;
+    --corP2: #8d1bc2;
+    --corP3: #461759;
+    --corP4: #220531;
+    --corP5: #13021c;
 
     --fonte-padrao: 'Metamorphous', Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Enchanted Land', 'Times New Roman', Times, serif;
@@ -28,12 +24,12 @@
 }
 
 * {
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
 
 body {
-    background-color: var(--corR5);
+    background-color: var(--corP5);
     font-family: var(--fonte-padrao);
 }
 
@@ -42,35 +38,37 @@ header {
 
     padding-top: 40px;
 
-    background-image: linear-gradient(to bottom, var(--corR2), var(--corR4));
+    background-image: linear-gradient(to bottom, var(--corP2), var(--corP4));
 
     text-align: center;
 }
 
 header > h1 {
+    padding-bottom: 20px;
+
     font: normal 4em var(--fonte-destaque);
 
-    color: var(--corY3);
+    color: var(--corW2);
 }
 
 header > p {
     max-width: 600px;
     margin: auto;
 
-    padding: 20px 10px 30px 10px;
+    padding: 0px 10px 10px 30px;
 
-    font: normal 1.2em var(--fonte-destaque2);
+    font: 1.2em var(--fonte-destaque2);
 
-    color: var(--corY3);
+    color: var(--corW2);
 }
 
 nav {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
-    
+
     padding: 10px;
-    
-    background-color: var(--corR4);
-    
+
+    background-color: var(--corP4);
+
     text-align: center;
 }
 
@@ -79,8 +77,8 @@ nav > a {
 
     font: bold 1.5em var(--fonte-destaque);
 
-    color: var(--corR1);
     text-decoration: none;
+    color: var(--corP1);
 
     transition: 0.4s;
 }
@@ -88,30 +86,31 @@ nav > a {
 nav > a:hover {
     padding: 10px;
     border-radius: 5px;
-    
-    background-color: var(--corR2);
-    
-    color: var(--corR4);
+
+    background-color: var(--corP1);
+
+    color: var(--corP3);
 }
+
 
 main {
     min-width: 300px;
     max-width: 1000px;
-    margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
-    
+    margin: auto;
+
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 
-    background-color: var(--cor00);
+    background-color: var(--corW1);
 }
 
 main h1 {
     font: 3em var(--fonte-destaque);
-    
+
     text-align: center;
-    color: var(--corY3);
+    color: var(--corP4);
 }
 
 main h2 {
@@ -120,7 +119,7 @@ main h2 {
     font: 2.5em var(--fonte-destaque);
     
     text-align: center;
-    color: var(--corY3);
+    color: var(--corP3);
 }
 
 main h3 {
@@ -129,7 +128,7 @@ main h3 {
 
     font: 2em var(--fonte-destaque);
 
-    color: var(--corY2);
+    color: var(--corP4);
 }
 
 main p {
@@ -142,14 +141,14 @@ main p {
 }
 
 footer {
-    padding: 10px 0px;
-    
-    background-color: var(--corR4);
+    padding: 10px 0px 10px 0px;
+
+    background-color: var(--corP4);
 
     font: 0.8em var(--fonte-padrao);
 
     text-align: center;
-    color: var(--cor00);
+    color: var(--corW1);
 }
 
 div.indice {
@@ -157,45 +156,38 @@ div.indice {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 370px;
     height: auto;
 
     padding: 10px 0px 15px 0px;
-    border-radius: 10px;
     margin-top: 30px;
+    border-radius: 10px;
 
-    background-image: linear-gradient(to bottom, var(--corR2), var(--corR4));
-}
-
-div#indice_mh {
-    padding: 0px 5px 15px 50px;
+    background-image: linear-gradient(to bottom, var(--corP2), var(--corP4));
 }
 
 div.indice h3 {
     padding-left: 0px;
     margin: 10px 0px;
+
+    color: var(--corW2);
 }
 
 div.indice ol {
     list-style-position: inside;
 }
 
-div.indice ol > li {
-    color: var(--corY2);
+div.indice ol > li{
+    color: var(--corW1);
     padding: 0px 10px 0px 15px;
 }
 
 div.indice ul > li {
-    color: var(--corY3);
+    color: var(--corP2);
     padding: 0px 10px 0px 45px;
 }
 
-div.indice ol > li:hover {
+div.indice li:hover {
     text-decoration: underline;
-    color: var(--corY1);
-}
-
-div.indice ul > li:hover {
-    text-decoration: underline;
-    color: var(--corY2);
+    color: var(--corP1);
 }

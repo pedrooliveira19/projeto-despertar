@@ -31,6 +31,7 @@ body {
 
 header {
     min-height: 150px;
+
     padding-top: 40px;
 
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
@@ -41,41 +42,36 @@ header {
 header > h1 {
     padding-bottom: 20px;
     
-    font-family: var(--fonte-destaque);
-    font-weight: normal;
-    font-size: 4em;
+    font: normal 4em var(--fonte-destaque);
 
-    color: white;
-    text-shadow: 2px, 2px, 0px, rgba(0, 0, 0, 0.267);
+    color: white
 }
 
 header > p {
     max-width: 600px;
-    padding: 0px 10px 30px 10px;
     margin: auto;
     
-    font-family: var(--fonte-destaque2);
-    font-size: 1.2em;
+    padding: 0px 10px 30px 10px;
+    
+    font: 1.2em var(--fonte-destaque2);
 
     color: white;
-    text-shadow: 2px, 2px, 0px, rgba(0, 0, 0, 0.315);
 }
 
 nav {
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.315); 
+    
+    padding: 10px;
+
     background-color: var(--cor3);
 
     text-align: center;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
-
-    padding: 10px;
 }
 
 nav > a {
     padding: 5px;
     
-    font-family: var(--fonte-destaque);
-    font-size: 1.5em;
-    font-weight: bold;
+    font: bold 1.5em var(--fonte-destaque);
 
     color: var(--cor0);
     text-decoration: none;
@@ -116,11 +112,11 @@ span {
 
 
 span.cartas5 {
-    width: 255px;
     height: 340px;
+    width: 255px;
     
-    margin-top: 40px;
     padding-top: 30px;
+    margin-top: 40px;
 }
 
 span.cartas5:hover {
@@ -136,16 +132,17 @@ span.cartas5:hover {
 }
 
 span.cartas5 > h2 {
+    font: bold 2em var(--fonte-destaque2);
+
     text-align: center;
-    font-family: var(--fonte-destaque2);
-    font-size: 2em;
 }
 
 span.cartas6 {
-    width: 220px;
+    width: 225px;
     height: 300px;
+
     padding-top: 30px;
-    margin-top: 90px;
+    margin-top: 40px;
 
     transition: transform 0.4s ease;
 }
@@ -164,8 +161,7 @@ span.cartas6:hover {
 }
 
 span.cartas6 > h2 {
-    font-family: var(--fonte-destaque2);
-    font-size: 1.5em;
+    font: bold 1.5em var(--fonte-destaque2);
 
     text-align: center;
 }
@@ -174,8 +170,7 @@ span.cartas6 > h2 {
 footer {
     background-color: var(--cor4);
 
-    font-family: var(--fonte-padrao);
-    font-size: 0.8em;
+    font: 0.8em var(--fonte-padrao);
 
     text-align: center;
     color: white;
@@ -186,5 +181,5 @@ footer.cartas5 {
 }
 
 footer.cartas6 {
-    padding-top: 70px;
+    padding-top: 120px;
 }
