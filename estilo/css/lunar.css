@@ -12,6 +12,7 @@
 :root {
     --corW1: #ededed;
     --corW2: #c8c8c8;
+
     --corP1: #b86eda;
     --corP2: #8d1bc2;
     --corP3: #461759;
@@ -44,8 +45,6 @@ header {
 }
 
 header > h1 {
-    padding-bottom: 20px;
-
     font: normal 4em var(--fonte-destaque);
 
     color: var(--corW2);
@@ -55,7 +54,7 @@ header > p {
     max-width: 600px;
     margin: auto;
 
-    padding: 0px 10px 10px 30px;
+    padding: 20px 10px 30px 10px;
 
     font: 1.2em var(--fonte-destaque2);
 
@@ -103,7 +102,7 @@ main {
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 30px; 
 
-    background-color: var(--corW1);
+    background-color: var(--corW2);
 }
 
 main h1 {

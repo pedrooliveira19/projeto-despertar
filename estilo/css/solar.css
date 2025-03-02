@@ -10,7 +10,7 @@
 }
 
 :root {
-    --cor00: white;
+    --corB1: white;
     
     --corY1: #f8dc8d;
     --corY2: #F4D06F;
@@ -104,7 +104,7 @@ main {
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 30px;
 
-    background-color: var(--cor00);
+    background-color: var(--corY1);
 }
 
 main h1 {

@@ -45,8 +45,6 @@ header {
 }
 
 header > h1 {
-    padding-bottom: 20px;
-
     font: normal 4em var(--fonte-destaque);
 
     color: var(--corB1);
@@ -56,7 +54,7 @@ header > p {
     max-width: 600px;
     margin: auto;
     
-    padding: 0px 10px;
+    padding: 20px 10px 30px 10px;
     margin-bottom: 30px;
 
     font: 1.2em var(--fonte-destaque2);
@@ -105,7 +103,7 @@ main {
     margin-bottom: 30px;
     border-radius: 0px 0px 10px 10px;
 
-    background-color: var(--corW1);
+    background-color: var(--corB1);
 }
 
 main h1 {

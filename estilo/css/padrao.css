@@ -40,8 +40,6 @@ header {
 }
 
 header > h1 {
-    padding-bottom: 20px;
-    
     font: normal 4em var(--fonte-destaque);
 
     color: white
@@ -51,7 +49,7 @@ header > p {
     max-width: 600px;
     margin: auto;
     
-    padding: 0px 10px 30px 10px;
+    padding: 20px 10px 30px 10px;
     
     font: 1.2em var(--fonte-destaque2);
 
