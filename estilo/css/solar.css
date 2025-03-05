@@ -152,10 +152,9 @@ main li {
 
 img#marca_sol {
     display: block;
-    width: 400px;
-    min-width: 200px;
-    height: 400px;
-    min-height: 200px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     margin: auto;
 
     margin-top: 20px;
