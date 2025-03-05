@@ -180,13 +180,15 @@ div.indice ol {
 }
 
 div.indice ol > li{
-    color: var(--corB2);
     padding: 0px 10px 0px 15px;
+
+    color: var(--corB2);
 }
 
 div.indice ul > li {
-    color: var(--corB1);
     padding: 0px 10px 0px 45px;
+
+    color: var(--corB1);
 }
 
 div.indice li:hover {

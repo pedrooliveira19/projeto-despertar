@@ -141,6 +141,26 @@ main p {
     text-align: justify;
 }
 
+ul, ol {
+    list-style-position: inside;
+}
+
+main li {
+    padding-top: 10px;
+    text-indent: 50px;
+}
+
+img#marca_sol {
+    display: block;
+    width: 400px;
+    min-width: 200px;
+    height: 400px;
+    min-height: 200px;
+    margin: auto;
+
+    margin-top: 20px;
+}
+
 footer {
     padding: 10px 0px;
     
@@ -149,7 +169,7 @@ footer {
     font: 0.8em var(--fonte-padrao);
 
     text-align: center;
-    color: var(--cor00);
+    color: var(--corY1);
 }
 
 div.indice {
@@ -167,27 +187,21 @@ div.indice {
     background-image: linear-gradient(to bottom, var(--corR2), var(--corR4));
 }
 
-div#indice_mh {
-    padding: 0px 5px 15px 50px;
-}
-
 div.indice h3 {
     padding-left: 0px;
     margin: 10px 0px;
 }
 
-div.indice ol {
-    list-style-position: inside;
-}
-
 div.indice ol > li {
-    color: var(--corY2);
     padding: 0px 10px 0px 15px;
+
+    color: var(--corY2);
 }
 
 div.indice ul > li {
-    color: var(--corY3);
     padding: 0px 10px 0px 45px;
+
+    color: var(--corY3);
 }
 
 div.indice ol > li:hover {

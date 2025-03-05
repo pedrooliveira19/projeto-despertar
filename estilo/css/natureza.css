@@ -179,13 +179,15 @@ div.indice ol {
 }
 
 div.indice ol > li{
-    color: var(--corG5);
     padding: 0px 10px 0px 15px;
+
+    color: var(--corG5);
 }
 
 div.indice ul > li {
-    color: var(--corG4);
     padding: 0px 10px 0px 45px;
+
+    color: var(--corG4);
 }
 
 div.indice li:hover {

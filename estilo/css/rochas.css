@@ -114,6 +114,7 @@ main h1 {
 
 main h2 {
     margin-top: 20px;
+
     font: 2.5em var(--fonte-destaque);
 
     text-align: center;
@@ -179,13 +180,15 @@ div.indice ol {
 }
 
 div.indice ol > li{
-    color: var(--corBr2);
     padding: 0px 10px 0px 15px;
+
+    color: var(--corBr2);
 }
 
 div.indice ul > li {
-    color: var(--corBr1);
     padding: 0px 10px 0px 45px;
+    
+    color: var(--corBr1);
 }
 
 div.indice li:hover {
